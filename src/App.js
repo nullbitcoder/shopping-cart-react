@@ -2,6 +2,7 @@
 import React, { Component } from 'react';
 import data from './data.json';
 import Products from './components/Products';
+import Filter from './components/Filter';
 
 export class App extends Component {
   constructor() {
@@ -22,6 +23,7 @@ export class App extends Component {
         <main>
           <div className="content">
             <div className="main">
+              <Filter count={this.state.products.length}></Filter>
               <Products products={this.state.products}></Products>
             </div>
             <div className="sidebar">Cart items</div>

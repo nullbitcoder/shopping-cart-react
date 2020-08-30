@@ -55,3 +55,21 @@ export default class Cart extends Component {
     );
   }
 }
+
+// <div>
+// <div className="cart">
+//   <ul className="cart-item">
+//     {cartItems.map(item =>(
+//       <li key={item._id}>
+//         <div>
+//           <img src={item.image} alt={items.title} />
+//         </div>
+//         <div>{item.title}</div>
+//         <button onclick={() => this.props.removeFromCart(item)}>
+//           Remove
+//         </button>
+//       </li>
+//     ))}
+//   </ul>
+// </div>
+// </div>
